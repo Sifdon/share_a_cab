@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.mohit.shareacab.Activities.ViewProfile">
+
+    <TextView
+        android:id="@+id/headerNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5pt"
+        android:textAlignment="center"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/headerNameView"
+        android:layout_marginLeft="5pt"
+        android:layout_marginTop="50dp"
+        android:text="Your Name:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:textAlignment="textEnd"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="50dp"
+        android:text="Your Email"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userProfileName"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignRight="@+id/userProfileName"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="5pt"
+        android:textAlignment="textEnd"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/changeEmailButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetPasswordButton"
+        android:layout_alignEnd="@+id/userProfileEmail"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignRight="@+id/userProfileEmail"
+        android:layout_alignStart="@+id/textView18"
+        android:onClick="changeAccountEmail"
+        android:text="Change Email Address" />
+
+    <Button
+        android:id="@+id/resetPasswordButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/changeEmailButton"
+        android:layout_alignLeft="@+id/changeEmailButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/changeEmailButton"
+        android:layout_alignStart="@+id/changeEmailButton"
+        android:layout_marginBottom="15dp"
+        android:onClick="resetPassword"
+        android:text="Reset Password" />
+
+    <Button
+        android:id="@+id/changeNameButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeEmailButton"
+        android:layout_alignEnd="@+id/userProfileEmail"
+        android:layout_alignLeft="@+id/changeEmailButton"
+        android:layout_alignRight="@+id/userProfileEmail"
+        android:layout_alignStart="@+id/changeEmailButton"
+        android:onClick="changeAccountName"
+        android:text="Change Account Name" />
+
+
+</RelativeLayout>

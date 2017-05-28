@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/viewMaps"
+        android:title="View Maps"/>
+
+    <item
+        android:id="@+id/viewShareRequests"
+        android:title="View Share Requests"/>
+
+    <item
+        android:id="@+id/viewProfile"
+        android:title="View Profile"/>
+
+    <item
+        android:id="@+id/logout"
+        android:title="Log Out"/>
+
+</menu>

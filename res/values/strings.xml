@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Share A Cab</string>
+    <string name="title_activity_user_maps_view">Map</string>
+    <string name="title_activity_select_origin_maps">Map</string>
+</resources>
